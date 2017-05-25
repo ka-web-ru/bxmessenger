@@ -1,0 +1,28 @@
+localhost:3306
+root
+без пароля
+
+
+админка
+test
+123456
+
+
+бд
+bxmessenger
+логин/пароль
+test
+123456
+
+тип таблиц стандартный
+кодировка UTF-8
+
+
+.git/info/exclude
+тут исключения для git
+
+*
+!local/
+!index.php
+!настройки.txt
+
