@@ -5,13 +5,13 @@ $arComponentDescription = array(
 	"NAME" => 'Мессенджер',
 	"DESCRIPTION" => 'Мессенджер',
 	"PATH" => array(
-		"ID" => "messenger",
+		"ID" => "Мессенджер",
 //		"CHILD" => array(
-//			"ID" => "slider",
-//			"NAME" => "Слайдер"
+//			"ID" => "Мессенджер",
+//			"NAME" => "Мессенджер"
 //		)
 	),
-	"ICON" => "./img/favicon_bx.gif",
+	"ICON" => "/img/favicon_bx.gif",
 );
 
 ?>

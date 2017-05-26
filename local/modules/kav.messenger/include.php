@@ -6,7 +6,7 @@ use Bitrix\Main\EventManager;
 
 Loader::registerAutoLoadClasses('kav.messenger', array(
     // no thanks, bitrix, we better will use psr-4 than your class names convention
-    'Kav\Messenger\MessengerTable' => 'lib/MessengerTable.php',
+    'Kav\Messenger\Lib\MessengerTable' => './lib/MessengerTable.php',
 ));
 
 EventManager::getInstance()->addEventHandler('main', 'OnAfterUserAdd', function(){

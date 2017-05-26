@@ -19,7 +19,7 @@
     cursor: pointer;
 }
 .messenger-wrapper{
-    display: none;
+    display: block;
     position: absolute;
     width: 200px;
     height: 350px;
@@ -29,4 +29,84 @@
     bottom: 35px;
     border: 2px solid blue;
     border-radius: 5px;
+}
+.btn-panel{
+    display: block;
+    position: relative;
+    width: 185px;
+    height: 20px;
+    background-color: #e2e2e2;
+    text-align: right;
+}
+.messenger-exit{
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: underline;
+    font-size:14px;
+    line-height: 20px;
+}
+.messenger-exit:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+}
+.messenger-close{
+    display: inline-block;
+    width: 20px;
+    font-size:16px;
+    line-height: 20px;
+}
+.messenger-close:hover{
+    cursor: pointer;
+    color: red;
+}
+.mess-view{
+    display: block;
+    width: 185px;
+    background-color: #fff;
+    height: 230px;
+    resize: none;
+}
+.mess-input{
+    display: block;
+    margin-top: 10px;
+    width: 185px;
+    background-color: #fff;
+    height: 50px;
+    resize: none;
+}
+.btn-send,
+.btn-messenger-enter{
+    display: block;
+    width: 185px;
+    height: 25px;
+    background-color: forestgreen;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 5px;
+}
+.btn-send:hover,
+.btn-messenger-enter{
+    cursor: pointer;
+}
+.messenger-enter-title{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 17px;
+}
+.messenger-nickname{
+    display: inline-block;
+    width: 185px;
+    background-color: #fff;
+}
+.messenger-tooltip{
+    display: inline-block;
+    margin-top: 15px;
+}
+.error{
+    border:1px solid red;
 }
