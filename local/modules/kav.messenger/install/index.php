@@ -5,7 +5,8 @@ use Bitrix\Main\Application;
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\ModuleManager;
-use Kav\Messenger\Lib\MessengerTable;
+use Kav\Messenger\Lib\MessengerDialogTable;
+use Kav\Messenger\Lib\MessengerUserTable;
 
 Loc::loadMessages(__FILE__);
 
@@ -76,7 +77,8 @@ class kav_messenger extends CModule
     public function installDB()
     {
         if (Loader::includeModule($this->MODULE_ID)) {
-            MessengerTable::getEntity()->createDbTable();
+            MessengerDialogTable::getEntity()->createDbTable();
+            MessengerUserTable::getEntity()->createDbTable();
 //            $result = MessengerTable::add(array(
 //                'autor' => 'админ',
 //                'message' => 'тестовое сообщение',
@@ -93,7 +95,8 @@ class kav_messenger extends CModule
 //                    "есть соединение с БД"
 //                );
             }
-            $connection->dropTable(MessengerTable::getTableName());
+            $connection->dropTable(MessengerDialogTable::getTableName());
+            $connection->dropTable(MessengerUserTable::getTableName());
         }
     }
 

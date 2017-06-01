@@ -11,11 +11,11 @@ use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
-class MessengerTable extends DataManager
+class MessengerDialogTable extends DataManager
 {
     public static function getTableName()
     {
-        return 'kav_messenger';
+        return 'kav_messengerdialog';
     }
 
     public static function getMap()
@@ -24,6 +24,9 @@ class MessengerTable extends DataManager
             new IntegerField('id', array(
                 'autocomplete' => true,
                 'primary' => true,
+                'title' => Loc::getMessage('ID'),
+            )),
+            new IntegerField('user_id', array(
                 'title' => Loc::getMessage('ID'),
             )),
             new StringField('autor', array(
