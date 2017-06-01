@@ -14,6 +14,12 @@
     width: 50px;
     height: 30px;
     background-color: #e2e2e2;
+    font-size: 20px;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 3px;
+    text-align: center;
+    padding: 3px 10px;
 }
 .mess-show:hover{
     cursor: pointer;
@@ -38,9 +44,14 @@
     background-color: #e2e2e2;
     text-align: right;
 }
+.messenger-myself{
+    display: inline-block;
+    width: 107px;
+    text-align: left;
+}
 .messenger-exit{
     display: inline-block;
-    margin-right: 10px;
+    width: 50px;
     text-decoration: underline;
     font-size:14px;
     line-height: 20px;
@@ -60,16 +71,25 @@
     cursor: pointer;
     color: red;
 }
+.messenger-hello{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-size:14px;
+    line-height: 14px;
+    margin-bottom: 5px;
+}
 .mess-view{
     display: block;
     width: 185px;
     background-color: #fff;
     height: 230px;
     resize: none;
+    overflow-y: visible;
 }
 .mess-input{
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
     width: 185px;
     background-color: #fff;
     height: 50px;
@@ -84,8 +104,14 @@
     border-radius: 5px;
     text-align: center;
     font-size: 15px;
-    line-height: 25px;
+    line-height: 15px;
     margin-top: 5px;
+}
+.btn-send{
+    padding: 5px 10px;
+}
+.btn-messenger-enter{
+    padding: 3px 10px;
 }
 .btn-send:hover,
 .btn-messenger-enter{
@@ -102,6 +128,34 @@
     display: inline-block;
     width: 185px;
     background-color: #fff;
+}
+.messenger-pass{
+    display: inline-block;
+    width: 185px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+.btn-messenger-register,
+.btn-messenger-login{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: underline;
+    margin-top: 10px;
+    border: none;
+    background-color: rgba(255,255,255,0);
+}
+.btn-messenger-register:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+}
+.btn-messenger-login:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
 }
 .messenger-tooltip{
     display: inline-block;
